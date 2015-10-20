@@ -5,6 +5,7 @@
 package {
   [
     'curl',
+    'git',
     'wget',
     'less',
     'ruby',
