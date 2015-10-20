@@ -73,7 +73,7 @@ Vagrant.configure(2) do |config|
      sudo /usr/bin/tdnf install -y less
      sudo /usr/bin/tdnf install -y ruby
      sudo /usr/bin/tdnf install -y unzip
-     #sudo /usr/bin/tdnf install -y openjdk
+     sudo /usr/bin/tdnf install -y openjdk
      sudo /usr/bin/tdnf install -y maven
      # lastly, update the mlocatedb
      sudo /usr/bin/updatedb
