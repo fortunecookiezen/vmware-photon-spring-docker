@@ -68,16 +68,17 @@ Vagrant.configure(2) do |config|
      sudo /usr/bin/tdnf makecache
      #sudo /usr/bin/tdnf install -y puppet
      #sudo /usr/bin/tdnf install -y curl
-     sudo /usr/bin/tdnf install -y git
-     sudo /usr/bin/tdnf install -y wget
-     sudo /usr/bin/tdnf install -y less
-     sudo /usr/bin/tdnf install -y ruby
-     sudo /usr/bin/tdnf install -y unzip
-     sudo /usr/bin/tdnf install -y openjdk
-     sudo /usr/bin/tdnf install -y maven
+     sudo /usr/bin/tdnf install -yq git
+     sudo /usr/bin/tdnf install -yq wget
+     sudo /usr/bin/tdnf install -yq less
+     sudo /usr/bin/tdnf install -yq ruby
+     sudo /usr/bin/tdnf install -yq unzip
+     sudo /usr/bin/tdnf install -yq openjdk
+     sudo /usr/bin/tdnf install -yq maven
      # lastly, update the mlocatedb
      sudo /usr/bin/updatedb
      sudo /usr/bin/systemctl enable docker
+     sudo /usr/bin/systemctl start docker
   SHELL
   #config.vm.provision "puppet" do |puppet|
   #  puppet.options = "--verbose --debug"
